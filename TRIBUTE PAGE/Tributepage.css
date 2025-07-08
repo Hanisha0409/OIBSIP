@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #f2f2f2;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #b0b0b0;
+  font-size: 1.2rem;
+}
+
+blockquote {
+  font-style: italic;
+  color: #ccc;
+  border-left: 5px solid #ff9800;
+  margin: 30px auto;
+  padding-left: 20px;
+  max-width: 600px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.image-gallery img {
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+section {
+  background: #1e1e1e;
+  margin: 30px 0;
+  padding: 25px;
+  border-left: 6px solid #2196f3;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+section ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+section p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #d0d0d0;
+}
+
+.quotes ul {
+  list-style-type: "💬 ";
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+  font-size: 0.9rem;
+}
