@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2 id="formTitle">Welcome Back</h2>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="active">
+        <div class="input-group">
+          <input type="text" id="loginUsername" placeholder="Enter your username" required />
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPassword" placeholder="Enter your password" required />
+        </div>
+        <div class="show-password">
+          <input type="checkbox" id="showLoginPassword" onclick="togglePassword('loginPassword', 'showLoginPassword')">
+          <label for="showLoginPassword">Show Password</label>
+        </div>
+        <button type="submit">Sign In</button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm">
+        <div class="input-group">
+          <input type="text" id="regUsername" placeholder="Choose a username" required />
+        </div>
+        <div class="input-group">
+          <input type="password" id="regPassword" placeholder="Create a password" required />
+        </div>
+        <div class="show-password">
+          <input type="checkbox" id="showRegPassword" onclick="togglePassword('regPassword', 'showRegPassword')">
+          <label for="showRegPassword">Show Password</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="regConfirmPassword" placeholder="Confirm your password" required />
+        </div>
+        <div class="show-password">
+          <input type="checkbox" id="showConfirmPassword" onclick="togglePassword('regConfirmPassword', 'showConfirmPassword')">
+          <label for="showConfirmPassword">Show Confirm Password</label>
+        </div>
+        <button type="submit">Create Account</button>
+      </form>
+
+      <div class="toggle">
+        <span id="toggleForm">Don't have an account? Sign up here</span>
+      </div>
+
+      <div id="message" class="message"></div>
+    </div>
+
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="welcome-screen">
+      <div class="welcome-title">🎉 Welcome!</div>
+      <div class="welcome-subtitle">You have successfully logged into your account</div>
+      <div id="userInfo" class="user-info"></div>
+      <p style="color: #ccc; font-style: italic;">Enjoy your secure session!</p>
+      <button id="logoutBtn" class="logout-btn">Sign Out</button>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
