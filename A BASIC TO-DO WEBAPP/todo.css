@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1e;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.input-section input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.task-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #2c2c2e;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-buttons button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.del-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.done-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #888;
+  display: block;
+}
